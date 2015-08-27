@@ -24,7 +24,8 @@
         android:layout_below="@+id/textViewLocalTime"
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -54,7 +55,8 @@
         android:layout_below="@+id/textViewBlueNinjaTime"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace" />
 
     <Button
         android:layout_width="match_parent"
@@ -69,7 +71,17 @@
         android:layout_height="wrap_content"
         android:text="Disconnect BlueNinja"
         android:id="@+id/buttonDisconnect"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/textViewStatus"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="INIT"
+        android:id="@+id/textViewStatus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewBlueNinjaTimeValue"
+        android:fontFamily="monospace" />
 
 </RelativeLayout>
